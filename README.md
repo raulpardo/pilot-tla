@@ -1,6 +1,6 @@
 # TLA+ Mechanization of PILOT semantics and refinements
 
-This repository accompanies the paper "Model-Checking the implementation of Consent". The repository contains the TLA+ specification of the abstract semantics of privacy policy language PILOT and two refinements.
+This repository accompanies the paper "Model-Checking the Implementation of Consent". The repository contains the TLA+ specification of the abstract semantics of privacy policy language PILOT and two refinements.
 
 The content of the repository is:
 
