@@ -5,7 +5,7 @@
     <stringAttribute key="distributedNetworkInterface" value="192.168.1.76"/>
     <intAttribute key="distributedNodesCount" value="1"/>
     <stringAttribute key="distributedTLC" value="off"/>
-    <intAttribute key="fpIndex" value="95"/>
+    <intAttribute key="fpIndex" value="19"/>
     <intAttribute key="maxHeapSize" value="25"/>
     <stringAttribute key="modelBehaviorInit" value="IndC_Init"/>
     <stringAttribute key="modelBehaviorNext" value="IndC_Next"/>

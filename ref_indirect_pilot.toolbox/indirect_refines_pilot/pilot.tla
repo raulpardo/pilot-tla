@@ -173,26 +173,7 @@ InformedDS == \A dc \in DCs, ds \in DSs :
                 received_data[ds][dc] # "0" 
                 => 
                 policy_base[ds][dc] = policy_base[dc][dc]
-
-
-(***************************************************************************)
-(* The property below together with AlwaysSatisfyDSPolicy verify privacy   *)
-(* requirement 3 in the accompaying paper.  Note that, if                  *)
-(* AlwaysSatisfyDSPolicy holds, the entity collecting the data will obtain *)
-(* a policy as restrictive as that of the data subject, and the property   *)
-(* below (InformedDC) check that the policy of the receiver is the same as *)
-(* that of the sender.  In the encoding of policies and subsume for this   *)
-(* mechanization, we interpret that if the policy of the receiver (who     *)
-(* received the transfer) subsumes that of the data onwer, then the        *)
-(* transfer was allowed by the data subject.                               *)
-(***************************************************************************)
-
-
-InformedDC == \A dc1,dc2 \in DCs :
-                received_data[dc1][dc2] # "0"
-                =>
-                policy_base[dc1][dc2] = policy_base[dc2][dc2]
                 
 =============================================================================
 \* Modification History
-\* Last modified Sun Mar 31 19:08:21 CEST 2024 by pardo
+\* Last modified Mon Apr 08 09:10:57 CEST 2024 by pardo
