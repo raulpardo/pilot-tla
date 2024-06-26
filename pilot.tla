@@ -158,15 +158,16 @@ AlwaysSatisfyDSPolicy == \A d \in Devices, dc \in DCs, ds \in DSs :
                             << received_data[d][dc], policy_base[ds][ds] >> \in poPolicies  
 
 (***************************************************************************)
-(* We say that a DS or DC is ``informed'' if before sending the data it    *)
-(* has received the policy of the receiver.  The following two formulae    *)
-(* indicate the cases when data is sent and transferred, respectively.     *)
+(* We say that a DS is ``informed'' if before sending the data it has      *)
+(* received the policy of the receiver.  The following formula expresses   *)
+(* this property when data is sent (i.e., collected by a DC).              *)
+(*                                                                         *)
+(*                                                                         *)
 (* Interestingly, this property also guarantees that the only way for a DC *)
 (* to impersonate another, is by inputting a policy of the ``victim DC''   *)
-(* in its policy_base.                                                     *)
-(* Therefore, in order to avoid ``impersonation attacks'' we simply need   *)
-(* to assume that for all policies in policy_base(d)(d) the owner of the   *)
-(* policy is device d.                                                     *)
+(* in its policy_base.  Therefore, in order to avoid ``impersonation       *)
+(* attacks'' we simply need to assume that for all policies in             *)
+(* policy_base(d)(d) the owner of the policy is device d.                  *)
 (***************************************************************************)
 
 InformedDS == \A dc \in DCs, ds \in DSs : 
@@ -176,4 +177,4 @@ InformedDS == \A dc \in DCs, ds \in DSs :
                 
 =============================================================================
 \* Modification History
-\* Last modified Mon Apr 08 09:10:57 CEST 2024 by pardo
+\* Last modified Wed Jun 26 17:32:28 CEST 2024 by pardo
